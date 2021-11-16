@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mkb">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mkb.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
