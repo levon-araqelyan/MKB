@@ -44,10 +44,11 @@
   align-items: center;
   cursor:pointer;
   p{
-    margin-left: 16px;
+    margin: 15px 16px;
     color: #919399;
     line-height: 16px;
   }
+
 }
 
 .activeLink{
@@ -55,13 +56,9 @@
     color: #DD0A34;
   }
   img{
-    path{
-      fill: red !important
-    }
+    filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(-50deg) saturate(500%);
   }
 }
-
-
 
 @media only screen and (max-width: 768px) {
   .leftMenu {

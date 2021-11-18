@@ -3,15 +3,19 @@ import type { AppProps } from 'next/app'
 import Layout from "../components/Layout/Layout";
 import Router from 'next/router'
 import React, { useEffect } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {getCookie} from "../utils/utils";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const user = {name: "Иван К.", position: "Агент", isAuthorized: true}
+  const user = {name: "Иван К.", position: "Агент"}
+  const isAuthorized = getCookie("token")
 
+  console.log(isAuthorized,"isAuthorized")
   useEffect(() => {
-    Router.push(user.isAuthorized === false ? '/login' : "/applications")
+    Router.push(!isAuthorized ? '/login' : "/applications")
   },[]);
 
-  return <Layout user={user}><Component {...pageProps}/></Layout>
+  return typeof window === 'object' ? <Layout user={{...user,isAuthorized: isAuthorized}}><Component {...pageProps}/></Layout> : null
 }
 
 export default MyApp

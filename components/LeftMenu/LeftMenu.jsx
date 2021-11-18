@@ -31,7 +31,7 @@ const LeftMenu = ({user, isOpen, setIsOpen}) => {
                           className={cn(styles.links, {[styles.activeLink]: router.pathname === link.href})}>
                         <a onClick={() => setIsOpen(false)}
                            className={cn(styles.item, {[styles.activeLink]: router.pathname === link.href})}>
-                            <Image src={link.src} alt={link.title} width={24} height={18}/>
+                            <img src={link.src} alt={link.title} width={24} height={18} className={styles.img}/>
                             <p>{link.title}</p>
                         </a>
                     </Link>
