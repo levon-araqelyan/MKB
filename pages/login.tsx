@@ -1,8 +1,8 @@
+import LoginForms from "../components/LoginForms";
+
 const Login = () => {
     return (
-        <div>
-            Login
-        </div>
+        <LoginForms />
     )
 }
 

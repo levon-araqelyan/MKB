@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import cn from "classnames";
 import styles from "./Layout.module.scss";
 import {useMediaQuery} from "react-responsive";
+import {Button} from "react-bootstrap";
 
 const Layout = ({children, user}) => {
     const md = useMediaQuery({maxWidth: 768})
