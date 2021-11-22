@@ -8,9 +8,10 @@ import {useRouter} from 'next/router';
 const LeftMenu = ({user, isOpen, setIsOpen}) => {
     const router = useRouter();
     const links = [
+        {src: "/plusCircle.svg", title: "Новая заявка", href: "/new-applications"},
         {src: "/applications.svg", title: "Заявки", href: "/applications"},
         {src: "/employees.svg", title: "Сотрудники", href: "/employees"},
-        {src: "/settings.svg", title: "Торговые точки", href: "/outlets"},
+        {src: "/outlets.svg", title: "Торговые точки", href: "/outlets"},
         {src: "/settings.svg", title: "Настройки", href: "/settings"}
     ]
 
