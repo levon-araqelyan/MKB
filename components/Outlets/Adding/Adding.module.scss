@@ -1,0 +1,30 @@
+.form{
+  background: #FFFFFF;
+  box-shadow: 0 0 16px rgba(79, 105, 118, 0.1);
+  border-radius: 8px;
+  min-height: 380px;
+  padding: 40px;
+}
+
+.buttonsWrap{
+  display: flex;
+  margin-top: 40px;
+  .buttons{
+    max-width: 101px;
+    margin-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .buttonsWrap{
+    flex-direction: column;
+    margin-top: 21px;
+    .buttons{
+      max-width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+  .form{
+    padding: 16px;
+  }
+}

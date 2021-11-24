@@ -10,9 +10,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   const user = {name: "Иван К.", position: "Агент"}
   const isAuthorized = getCookie("token")
 
-  console.log(isAuthorized,"isAuthorized")
   useEffect(() => {
-    Router.push(!isAuthorized ? '/login' : "/applications")
+    if(!isAuthorized){
+      Router.push('/login')
+    }
   },[]);
 
   return typeof window === 'object' ? <Layout user={{...user,isAuthorized: isAuthorized}}><Component {...pageProps}/></Layout> : null

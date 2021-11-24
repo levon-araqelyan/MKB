@@ -1,6 +1,6 @@
 export type buttonType = {
     title: string;
-    onClick: () => void;
+    onClick?: () => void;
     className?: string;
     variant: "primary" | "secondary" | "success" | "danger" | "outline-danger" | "light";
     size: "sm" | "lg",

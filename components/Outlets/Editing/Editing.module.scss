@@ -1,0 +1,41 @@
+.form{
+  background: #FFFFFF;
+  box-shadow: 0 0 16px rgba(79, 105, 118, 0.1);
+  border-radius: 8px;
+  min-height: 380px;
+  padding: 40px;
+}
+
+.label{
+  color: #919399;
+  font-size: 14px;
+}
+
+.desc{
+  color: #000000;
+  font-size: 16px;
+}
+
+.activeWrap{
+  display: flex;
+  align-items: center;
+}
+
+.button{
+  max-width: 131px;
+  margin-top: 14px;
+}
+
+.title{
+  color: #152536;
+  font-size: 20px;
+}
+
+.buttonsWrap{
+  display: flex;
+  margin-top: 40px;
+  .buttons{
+    max-width: 101px;
+    margin-right: 16px;
+  }
+}
