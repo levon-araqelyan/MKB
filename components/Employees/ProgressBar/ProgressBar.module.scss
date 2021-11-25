@@ -1,0 +1,60 @@
+.progressWrap{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.circlesWrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #2C333B;
+  .section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+  }
+  .circle{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    background: #CBCBD0;
+  }
+  .activeCircle{
+    opacity: 1;
+    background: red;
+  }
+  .checked{
+    border: 2px solid #41B794;
+    opacity: 1;
+    background: #ffffff;
+  }
+  .line{
+    width: 100%;
+    height: 2px;
+    background: #E1E4EC;
+    margin-top: 12px;
+  }
+  .activeLine{
+    background: #41B794;
+  }
+  .title{
+    position: absolute;
+    margin-top: 50px;
+    font-size: 14px;
+  }
+}
+
+.lastCircle{
+  background: #ffffff !important;
+}
+
+.checkedIcon{
+  width: 14px;
+}

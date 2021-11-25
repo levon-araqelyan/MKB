@@ -1,3 +1,5 @@
+import Modal from "../components/common/Modal";
+
 const Employees = () => {
     return (
         <div>
