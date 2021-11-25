@@ -51,6 +51,7 @@ const Adding: React.FC<addingType> = () => {
                 show={isOpenModal}
             />
             <h2 className={styles.title}>{positionData.title}</h2>
+            {positionData.position === 3 && <p className={styles.description}>Теперь она появится в общем списке сотрудников</p>}
             {positionData.position !== 3 && <ProgressBar position={positionData.position}/>}
             {positionData.position !== 3 && <EmployeesForm errors={errors} control={control} position={positionData.position}/>}
             <div className={styles.buttonsWrap}>
