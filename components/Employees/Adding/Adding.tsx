@@ -46,7 +46,10 @@ const Adding: React.FC<addingType> = () => {
                 secondButtonTitle={"Удалить"}
                 description={"Вы действительно хотите выйти из формы? Данные не будут сохранены"}
                 onCloseModal={() => setIsOpenModal(false)}
-                secondButtonAction={()=> Router.push("/employees")}
+                secondButtonAction={()=> {
+                    reset()
+                    Router.push("/employees")
+                }}
                 firstButtonAction={()=> setIsOpenModal(false)}
                 show={isOpenModal}
             />

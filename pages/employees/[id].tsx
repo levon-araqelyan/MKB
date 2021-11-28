@@ -10,12 +10,13 @@ export default function EmployeesQuery() {
     const content = useCallback(() => {
         switch (query.id) {
             case "adding" : {
-                return <Adding />
+                return <Adding/>
             }
-            case "trade" : {
+            case "employee" : {
                 return <Editing type={query.type}/>
             }
             default : {
+
                 if (query.id) {
                     Router.push('/404')
                 }
@@ -24,18 +25,18 @@ export default function EmployeesQuery() {
         }
     }, [query])
 
-    const getParams = useCallback(()=>{
-        if(query.type){
-            return {title: "Редактирование" , breadcrumbList: [{href: "trade",title:"К сотруднику"}]}
+    const getParams = useCallback(() => {
+        if (query.type) {
+            return {title: "Редактирование", breadcrumbList: [{href: "trade", title: "К сотруднику"}]}
         }
-        if(query.id === "adding"){
-            return {title: "Новый сотрудник" , breadcrumbList: [{href: "/employees",title:"К списку сотрудников"}]}
+        if (query.id === "adding") {
+            return {title: "Новый сотрудник", breadcrumbList: [{href: "/employees", title: "К списку сотрудников"}]}
         }
-        if(query.id === "employee"){
-            return {title: "Сотрудник" , breadcrumbList: [{href: "/employees",title:"К списку сотрудников"}]}
+        if (query.id === "employee") {
+            return {title: "Сотрудник", breadcrumbList: [{href: "/employees", title: "К списку сотрудников"}]}
         }
-        return {title: "" , breadcrumbList: [{href: "",title:""}]}
-    },[query])
+        return {title: "", breadcrumbList: [{href: "", title: ""}]}
+    }, [query])
 
     return (
         <Container title={getParams().title} breadcrumbList={getParams().breadcrumbList}>

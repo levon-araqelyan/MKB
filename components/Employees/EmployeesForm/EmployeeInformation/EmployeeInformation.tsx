@@ -135,24 +135,6 @@ const EmployeeInformation: React.FC<any> = ({control, errors}) => {
                     />
                 }}
             />
-
-            <Controller
-                rules={{
-                    required: true,
-                }}
-                control={control}
-                name="residenceAddress"
-                render={({field: {onChange, onBlur, value, ref}}) => {
-                    return <Input
-                        errorMessage={"Введите Адрес проживания"}
-                        type={"text"}
-                        value={value}
-                        onChange={onChange}
-                        label={"Адрес проживания"}
-                        isInvalid={errors?.residenceAddress}
-                    />
-                }}
-            />
             <div className={styles.inputsWrap}>
                 <Controller
                     rules={{
