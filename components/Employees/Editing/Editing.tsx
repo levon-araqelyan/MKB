@@ -92,7 +92,7 @@ const Editing: React.FC<editingType> = ({type}) => {
                         <h2 className={styles.title}>Информация о сотруднике</h2>
                         <EmployeeInformation control={control} errors={errors}/>
                         <h2 className={styles.title}>Паспортные данные</h2>
-                        <PassportData control={control} errors={errors} />
+                        <PassportData control={control} errors={errors}/>
 
                     </div>
                     <div className={styles.buttonsWrap}>
