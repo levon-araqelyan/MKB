@@ -1,7 +1,9 @@
+import AddApplications from "../components/AddApplications";
+
 const NewApplications = () => {
     return (
         <div>
-            NewApplications
+            <AddApplications />
         </div>
     )
 }

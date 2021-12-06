@@ -1,0 +1,83 @@
+.primaryDocuments {
+  .inputsWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    div {
+      width: 49%;
+    }
+  }
+
+  .radioButton {
+    display: flex;
+    margin-bottom: 16px;
+
+    div {
+      margin-right: 16px;
+    }
+  }
+
+  .radioLabel {
+    margin-bottom: 8px;
+    color: #242729;
+  }
+}
+
+.sendWrap {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+
+  div {
+    max-width: 382px;
+    width: 100%;
+    margin-bottom: 0 !important;
+    margin-right: 16px;
+  }
+
+  button {
+    width: fit-content;
+  }
+}
+
+.smallInput {
+  width: 382px;
+}
+.title{
+  font-weight: bold;
+}
+@media only screen and (max-width: 568px) {
+  .primaryDocuments {
+    .inputsWrap {
+      flex-direction: column;
+      div {
+        width: 100%;
+      }
+    }
+  }
+  .sendWrap {
+    flex-direction: column;
+    align-items: flex-start;
+    div {
+      width: 100%;
+    }
+    button {
+      margin-top: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .primaryDocuments {
+    .inputsWrap {
+      flex-direction: column;
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+

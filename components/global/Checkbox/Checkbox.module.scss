@@ -1,0 +1,15 @@
+.checkbox{
+  input{
+    outline: none;
+    &:checked{
+      background-color: #DD0A34;
+      border-color: #DD0A34;
+      outline: none;
+    }
+    &:focus{
+      outline: none;
+      border-color: #DD0A34;
+      box-shadow:none !important;
+    }
+  }
+}

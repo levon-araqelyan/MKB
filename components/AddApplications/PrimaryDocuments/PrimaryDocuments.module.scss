@@ -1,0 +1,23 @@
+.primaryDocuments {
+  .inputsWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    div{
+      width: 49%;
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .primaryDocuments{
+    .inputsWrap{
+      flex-direction: column;
+      margin-top: 21px;
+      div{
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

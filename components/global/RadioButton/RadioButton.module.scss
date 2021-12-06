@@ -1,0 +1,8 @@
+.radioButton{
+  input{
+    &:checked{
+      background-color: #DD0A34;
+      border-color: #DD0A34;
+    }
+  }
+}

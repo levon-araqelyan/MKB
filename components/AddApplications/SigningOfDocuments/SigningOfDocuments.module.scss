@@ -1,0 +1,102 @@
+.SigningOfDocuments {
+  .inputsWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    div{
+      width: 100%;
+    }
+    input[type="file"]::-webkit-file-upload-button{
+      float: right;
+      margin-right: -12px;
+      display: none;
+    }
+    input{
+      &:before{
+        content: 'Добавить';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+        border: 1px solid #999;
+        border-radius: 3px;
+        padding: 0 8px;
+        outline: none;
+        height: 100%;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        text-shadow: 1px 1px #fff;
+        font-weight: 700;
+        font-size: 10pt;
+        position: absolute;
+        width: 90px;
+        top:0;
+        right: 0;
+      }
+    }
+  }
+
+  .radioButton{
+    display: flex;
+    margin-bottom: 16px;
+    div{
+      margin-right: 16px;
+    }
+  }
+  .radioLabel{
+    margin-bottom: 8px;
+    color: #242729;
+  }
+}
+
+.sendWrap{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  div{
+    max-width: 382px;
+    width: 100%;
+    margin-bottom: 0 !important;
+    margin-right: 16px;
+  }
+  button{
+    width: fit-content;
+  }
+}
+
+.downloads{
+  .title{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  p{
+    color:#DD0A34;
+    cursor: pointer;
+    img{
+      margin-right: 8px;
+    }
+  }
+}
+
+.smallInput{
+  width: 382px;
+}
+
+.but{
+  width: 110px;
+  height: 36px;
+  margin-bottom: 46px;
+}
+
+@media only screen and (max-width: 568px) {
+  .primaryDocuments {
+    .inputsWrap{
+      flex-direction: column;
+      div{
+        width: 100%;
+      }
+    }
+  }
+}

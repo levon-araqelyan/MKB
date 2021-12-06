@@ -1,0 +1,73 @@
+.primaryDocuments {
+  .inputsWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    div{
+      width: 49%;
+    }
+  }
+
+  .radioButton{
+    display: flex;
+    margin-bottom: 16px;
+    div{
+      margin-right: 16px;
+    }
+  }
+  .radioLabel{
+    margin-bottom: 8px;
+    color: #242729;
+  }
+}
+
+.sendWrap{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  div{
+    max-width: 382px;
+    width: 100%;
+    margin-bottom: 0 !important;
+    margin-right: 16px;
+  }
+  button{
+    width: fit-content;
+  }
+}
+
+.infoCard{
+  background-color: #F8F9FA;
+  border: 1px solid #E9ECEF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  max-width: 365px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  .title{
+    font-weight: bold;
+  }
+  span{
+    color: #919399;
+    font-size: 14px;
+  }
+  p{
+    margin-bottom: 12px;
+  }
+}
+
+.smallInput{
+  width: 382px;
+}
+
+@media only screen and (max-width: 568px) {
+  .primaryDocuments {
+    .inputsWrap{
+      flex-direction: column;
+      div{
+        width: 100%;
+      }
+    }
+  }
+}
